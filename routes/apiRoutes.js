@@ -13,7 +13,19 @@ module.exports = function (app) {
       });
   });
 
+  app.get("/api/workouts/range", (req, res) => {
+    db.workout.find()
+      .limit(3)
+      .then((dbWorkout) => {
+        res.json(dbWorkout);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
+  });
+
   app.post("/api/workouts", (req, res) => {
+    console.log(req.body);
     db.workout.create(req.body)
       .then(dbWorkouts => {
         res.json(dbWorkouts);
