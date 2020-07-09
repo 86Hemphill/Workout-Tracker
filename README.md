@@ -1,6 +1,15 @@
-# Unit 17 Nosql Homework: Workout Tracker
+# MongoDB Workout Tracker
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+MongoDB Workout Tracker is a fitness tracker that tracks resistance and cardio exercises. Each workout and exercise is then displayed in a dashboard using Chart.js.
+
+MongoDB Workout Tracker is a full-stack web application that utilizes the following technologies:
+
+Back-end: MongoDB, Mongoose, Express, and NodeJS
+Front-end: Semantic UI, Chart.js, and Moment.js
+
+The application is deployed to Heroku with a MongoDB backend here: https://mongo-workout.herokuapp.com/
+
+![Application gif](workout-tracker.gif)
 
 ## User Story
 
